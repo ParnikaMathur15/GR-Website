@@ -9,7 +9,7 @@ function About() {
         </div>
         <div className='p-10 rounded-l-2xl shadow-[0px_0px_400px_0px_#3182ce]  flex justify-center items-center'>
             <p className="font-light text-white text-2xl text-pretty ">
-            <strong className='text-primary -translate-x-5 -translate-y-3 text-5xl absolute font-serif'>" </strong>A hub for college students passionate about coding. It connects you with other coders, providing a platform to share knowledge and collaborate. The community also organizes exciting events like hackathons to hone your coding skills and creativity.
+            A hub for college students passionate about coding. It connects you with other coders, providing a platform to share knowledge and collaborate. The community also organizes exciting events like hackathons to hone your coding skills and creativity.
             </p>
         </div>
     </div>
