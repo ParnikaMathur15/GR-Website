@@ -10,7 +10,7 @@ function Footer() {
             D-29, Institutional Area, Janakpuri, New Delhi-110058</p>
         </div>
         <div>
-            <h1 className='text-white text-xl sm:text-3xl font-semibold'>Social Links</h1>
+            <h1 className='text-white text-xl sm:text-3xl font-semibold whitespace-nowrap'>Social Links</h1>
             <div className='flex gap-2 mt-1 sm:mt-3 justify-end'>
                 <Instagram className='text-white hidden sm:flex' size={25}/>
                 <p className='text-white text-sm sm:text-lg'>Instagram</p>
