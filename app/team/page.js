@@ -8,9 +8,9 @@ function page() {
       <div className="flex sm:flex-row flex-col justify-center items-center p-10 gap-10 sm:gap-20">
         <div className=" rounded-3xl p-5 sm:shadow-[0px_0px_100px_0px_#3182ce] shadow-[0px_0px_50px_0px_#3182ce]">
         <div className="flex w-[300px] sm:w-[350px] h-[250px] sm:h-[300px]">
-          <Image src={"/chirag.png"} height={20} width={400} />
+          <Image src={"/amaanii.png"} height={20} width={400} />
           </div>
-          <h1 className="text-white text-5xl mt-4 whitespace-nowrap">Amaani Arora</h1>
+          <h1 className="text-white text-4xl sm:text-5xl mt-4 whitespace-nowrap">Amaani Arora</h1>
           <div className="flex justify-between mt-6">
             <div className="flex flex-col">
               <p className="text-gray-300 text-xl">President</p>
@@ -26,7 +26,7 @@ function page() {
           <div className="flex w-[300px] sm:w-[350px] h-[250px] sm:h-[300px]">
           <Image src={"/chirag.png"} height={20} width={400} />
           </div>
-          <h1 className="text-white text-5xl mt-4 whitespace-nowrap">Chirag Jain</h1>
+          <h1 className="text-white text-4xl sm:text-5xl mt-4 whitespace-nowrap">Chirag Jain</h1>
           <div className="flex justify-between mt-6">
             <div className="flex flex-col">
               <p className="text-gray-300 text-xl whitespace-nowrap">Vice President</p>
