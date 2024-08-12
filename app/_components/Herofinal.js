@@ -3,13 +3,6 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import './bg.css'
-import Navbar from "./Navbar";
-import About from "./About";
-import { Carousel } from "./Carousel";
-import Contact from "./Contact";
-import FromTo from "./FromTo";
-import Timeliner from "./Timeliner";
-import Footer from "./Footer";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -46,7 +39,7 @@ function Herofinal() {
           variants={container(0.5)}
           initial="hidden"
           animate="visible"
-          className="p-7 rounded-3xl shadow-[0px_0px_400px_0px_#3182ce] w-[200px]"
+          className="p-7 hidden sm:flex rounded-3xl shadow-[0px_0px_400px_0px_#3182ce] w-[200px]"
         >
           <div>
             <p className="font-extrabold text-white text-4xl">Learn</p>
@@ -68,7 +61,7 @@ function Herofinal() {
           variants={container2(0.5)}
           initial="hidden"
           animate="visible"
-          className="p-7 rounded-3xl shadow-[0px_0px_400px_0px_#3182ce] w-[200px]"
+          className="p-7 hidden sm:flex rounded-3xl shadow-[0px_0px_400px_0px_#3182ce] w-[200px]"
         >
           <div>
             <p className="font-extrabold text-white text-4xl">Code</p>
@@ -77,7 +70,7 @@ function Herofinal() {
           </div>
         </motion.div>
       </div>
-      <div className=" text-white font-extrabold text-7xl font-mono flex flex-col justify-center items-center mb-10">
+      <div className=" text-white font-extrabold text-6xl sm:text-7xl font-mono flex flex-col justify-center items-center mb-10">
         <h1>Geek Room</h1>
         <h1>IITM</h1>
       </div>

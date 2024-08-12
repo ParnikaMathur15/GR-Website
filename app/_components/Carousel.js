@@ -4,14 +4,10 @@ import { motion, useMotionValue } from "framer-motion";
 import Image from "next/image";
 
 const imgs = [
-  "/car.png",
-  "/car.png",
-  "/car.png",
-  "/car.png",
-  "/car.png",
-  "/car.png",
-  "/car.png",
-  "/car.png"
+  "/event.png",
+  "/event.png",
+  "/event.png",
+  "/event.png",
 ];
 
 const ONE_SECOND = 1000;
@@ -58,7 +54,7 @@ export const Carousel = () => {
   };
 
   return (
-    <div className=" overflow-hidden p-16">
+    <div className=" overflow-hidden p-3 mb-5 sm:mb-0 sm:p-16 h-full">
       <motion.div
         drag="x"
         dragConstraints={{
@@ -100,7 +96,7 @@ const Images = ({ imgIndex }) => {
               scale: imgIndex === idx ? 0.95 : 0.85,
             }}
             transition={SPRING_OPTIONS}
-            className="shadow-[10px_10px_20px_0px_#3182ce] h-screen w-full shrink-0 rounded-3xl bg-neutral-800 object-cover"
+            className="shadow-[10px_10px_20px_0px_#3182ce] sm:h-screen h-[300px] w-full shrink-0 rounded-3xl bg-neutral-800 object-cover"
           >
             {/* <Image src={imgSrc} fill/> */}
           </motion.div>
