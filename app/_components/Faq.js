@@ -19,7 +19,7 @@ function Faq() {
       <AccordionItem value="item-2">
         <AccordionTrigger className="text-2xl text-left">So, what is Geek Room IITM?</AccordionTrigger>
         <AccordionContent className="text-xl text-left">
-          Each college associated with Geek Room is its 'chapter.' Simply put, Geek Room IITM is a part of Geek Room which is represented by the IITM college.
+          Each college associated with Geek Room is its chapter. Simply put, Geek Room IITM is a part of Geek Room which is represented by the IITM college.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
