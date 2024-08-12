@@ -1,10 +1,11 @@
 'use client'
 import React, { useEffect, useRef, useState } from "react";
-
-import TimelineObserver from "react-timeline-animation";
-
+import dynamic from 'next/dynamic';
 import "./timeline.css";
 import Link from "next/link";
+
+// Dynamically import TimelineObserver
+const TimelineObserver = dynamic(() => import("react-timeline-animation"), { ssr: false });
 
 const Timeline = ({ setObserver, callback }) => {
   const [message1, setMessage1] = useState("");
@@ -32,12 +33,14 @@ const Timeline = ({ setObserver, callback }) => {
   };
 
   useEffect(() => {
-    setObserver(timeline1.current);
-    setObserver(timeline2.current);
-    setObserver(timeline3.current);
-    setObserver(circle1.current, someCallback);
-    setObserver(circle2.current, someCallback2);
-    setObserver(circle3.current, someCallback3);
+    if (typeof window !== "undefined" && 'IntersectionObserver' in window) {
+      setObserver(timeline1.current);
+      setObserver(timeline2.current);
+      setObserver(timeline3.current);
+      setObserver(circle1.current, someCallback);
+      setObserver(circle2.current, someCallback2);
+      setObserver(circle3.current, someCallback3);
+    }
   }, []);
 
   return (
@@ -89,8 +92,8 @@ export default function Timeliner() {
       />
       <Link href={'/events'}>
       <div className=" text-white font-bold sm:text-3xl text-2xl flex flex-col justify-center items-center mt-24 ">
-        <div class="rounded-full bg-gradient-to-r from-secondary via-orange-300 to-primary p-1">
-          <div class="rounded-full bg-black py-5 px-10">
+        <div className="rounded-full bg-gradient-to-r from-secondary via-orange-300 to-primary p-1">
+          <div className="rounded-full bg-black py-5 px-10">
             See Details
           </div>
         </div>

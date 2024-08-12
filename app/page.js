@@ -14,6 +14,7 @@ export default function Home() {
       <Herofinal/>
       <About/>
       <Carousel/>
+      <Timeliner/>
       <Faq/>
       <Contact/>
     </div>
