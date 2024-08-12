@@ -81,7 +81,7 @@ export default function Timeliner() {
     <div className="App flex flex-col justify-center items-center">
       <TimelineObserver
         initialColor="#e5e5e5"
-        fillColor="#2791a3"
+        fillColor="#3098d9"
         handleObserve={(setObserver) => (
           <Timeline
             callback={onCallback}
