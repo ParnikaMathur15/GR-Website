@@ -31,7 +31,7 @@ function Navbar() {
             href={menu.path}
             key={index}
             className={` ${
-              path == menu.path && ` text-white px-5 rounded-full bg-black bg-opacity-50`
+              path == menu.path && `scale-105 font-extrabold overline`
             }`}
           >
             {menu.name}
