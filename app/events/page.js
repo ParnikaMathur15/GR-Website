@@ -6,6 +6,7 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { LoaderCircle } from "lucide-react";
 
 // Custom arrow components
 function NextArrow(props) {
@@ -60,15 +61,21 @@ function PrevArrow(props) {
 
 function Events() {
   const [eventList, seteventList] = useState();
+  const [loading, setLoading] = useState(true); // Loading state
 
   useEffect(() => {
     getEventList();
   }, []);
 
   const getEventList = async () => {
-    const result = await db.select().from(events).orderBy(desc(events.id));
-    seteventList(result);
-    console.log(result);
+    try {
+      const result = await db.select().from(events).orderBy(desc(events.id));
+      seteventList(result);
+    } catch (error) {
+      console.error("Error fetching events:", error);
+    } finally {
+      setLoading(false); // Set loading to false once data is fetched
+    }
   };
 
   // Slider settings
@@ -84,6 +91,14 @@ function Events() {
     nextArrow: <NextArrow />, // Custom next arrow
     prevArrow: <PrevArrow />, // Custom previous arrow
   };
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center min-h-screen">
+        <LoaderCircle className="text-primary animate-spin" size={100}/>
+      </div>
+    );
+  }
 
   return (
     <div>
