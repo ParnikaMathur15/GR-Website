@@ -122,7 +122,7 @@ function Events() {
               ))}
             </Slider>
           </div>
-          <div className="shadow-[0px_0px_20px_0px_#3182ce] rounded-2xl w-[90%] mx-auto sm:mt-5 mt-0">
+          <div className="shadow-[0px_0px_20px_0px_#3182ce] rounded-2xl w-[90%] sm:w-[70%] mx-auto sm:mt-5 mt-0">
             <p className="p-4 sm:p-8 font-light text-white text-md sm:text-2xl text-center">
               {item.eventDesc}
             </p>

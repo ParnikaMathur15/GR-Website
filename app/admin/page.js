@@ -1,4 +1,5 @@
 "use client";
+import { Button } from "@/components/ui/button";
 import { db } from "@/configs";
 import { events } from "@/configs/schema";
 import { eq } from "drizzle-orm";
@@ -8,7 +9,17 @@ function Admin() {
   const [files, setFiles] = useState([]);
   const [name, setname] = useState();
   const [desc, setdesc] = useState();
-  const [uploadedFileNames, setUploadedFileNames] = useState([]); // State to store uploaded file names
+  const [uploadedFileNames, setUploadedFileNames] = useState([]);
+  const [eventList, seteventList] = useState([]);
+
+  useEffect(() => {
+    getEventList();
+  }, []);
+
+  const getEventList = async () => {
+    const result = await db.select().from(events);
+    seteventList(result);
+  };
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -24,13 +35,10 @@ function Admin() {
 
     if (result.success) {
       alert("Images uploaded");
-      // Save the uploaded file names in state
       const fileNames = files.map((file) => file.name);
-      console.log("Uploaded File Names:", fileNames); // Debugging log
       setUploadedFileNames(fileNames);
-
-      // Call uploadToDb after the state has been updated
-      uploadToDb(fileNames);
+      await uploadToDb(fileNames);
+      getEventList(); // Refresh the event list after upload
     }
   };
 
@@ -38,24 +46,13 @@ function Admin() {
     const result = await db.insert(events).values({
       eventName: name,
       eventDesc: desc,
-      images: fileNames, // Use the file names passed as an argument
+      images: fileNames,
     });
   };
 
-  const [eventList, seteventList] = useState();
-
-  useEffect(() => {
-    getEventList();
-  }, []);
-
-  const getEventList = async () => {
-    const result = await db.select().from(events);
-    seteventList(result);
-    console.log(result);
-  };
-
-  const onDeleteEvent = async () => {
-    const result = await db.delete(events).where(eq(events.id, eventList.id));
+  const onDeleteEvent = async (id) => {
+    const result = await db.delete(events).where(eq(events.id, id));
+    seteventList(eventList.filter((event) => event.id !== id)); // Update state after deletion
   };
 
   return (
@@ -81,7 +78,6 @@ function Admin() {
             multiple
             onChange={(e) => {
               const selectedFiles = Array.from(e.target.files);
-              console.log("Selected Files:", selectedFiles); // Debugging log
               setFiles(selectedFiles);
             }}
           />
@@ -92,7 +88,7 @@ function Admin() {
       </div>
 
       <div className="mt-20 text-white flex flex-col gap-10">
-        {eventList?.map((item, index) => (
+        {eventList.map((item, index) => (
           <div key={index} className="border flex justify-between p-10">
             <div>
               <p>{item.eventName}</p>
@@ -102,13 +98,12 @@ function Admin() {
               <p>{item.eventDesc}</p>
             </div>
             <div>
-              <p
-                onClick={async () => {
-                  await onDeleteEvent();
-                }}
+              <Button
+                className="bg-red-500 text-white"
+                onClick={() => onDeleteEvent(item.id)} // Pass the event id here
               >
                 Delete
-              </p>
+              </Button>
             </div>
           </div>
         ))}
