@@ -9,15 +9,17 @@ function Footer() {
             <p className='text-gray-300 text-xs sm:text-sm font-normal w-[250px] sm:w-[400px]'>Institute of Information Technology & Management
             D-29, Institutional Area, Janakpuri, New Delhi-110058</p>
         </div>
-        <div>
+        <div >
             <h1 className='text-white text-xl sm:text-3xl font-semibold whitespace-nowrap'>Social Links</h1>
+            <div className='flex flex-row sm:flex-col justify-end gap-5 sm:gap-0 mt-2 sm:mt-0'>
             <div className='flex gap-2 mt-1 sm:mt-3 justify-end'>
-                <Instagram className='text-white hidden sm:flex' size={25}/>
-                <p className='text-white text-sm sm:text-lg'>Instagram</p>
+                <Instagram className='text-white' size={25}/>
+                <p className='text-white text-sm sm:text-lg hidden sm:flex'>Instagram</p>
             </div>
             <div className='flex gap-2 mt-1 sm:mt-3 justify-end'>
-                <Linkedin className='text-white hidden sm:flex' size={25}/>
-                <p className='text-white text-sm sm:text-lg'>LinkedIn</p>
+                <Linkedin className='text-white' size={25}/>
+                <p className='text-white text-sm sm:text-lg hidden sm:flex'>LinkedIn</p>
+            </div>
             </div>
         </div>
     </div>

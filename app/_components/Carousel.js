@@ -96,7 +96,7 @@ const Images = ({ imgIndex }) => {
               scale: imgIndex === idx ? 0.95 : 0.85,
             }}
             transition={SPRING_OPTIONS}
-            className="shadow-[10px_10px_20px_0px_#3182ce] sm:h-screen h-[300px] w-full shrink-0 rounded-3xl bg-neutral-800 object-cover"
+            className="sm:h-screen h-[300px] w-full shrink-0 bg-neutral-800 object-cover"
           >
             {/* <Image src={imgSrc} fill/> */}
           </motion.div>

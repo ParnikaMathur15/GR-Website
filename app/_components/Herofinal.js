@@ -70,9 +70,11 @@ function Herofinal() {
           </div>
         </motion.div>
       </div>
-      <div className=" text-white font-extrabold text-6xl sm:text-7xl font-mono flex flex-col justify-center items-center mb-10">
+      <div className=" text-white font-bold text-6xl sm:text-7xl flex flex-col justify-center items-center mb-10">
         <h1>Geek Room</h1>
-        <h1>IITM</h1>
+        <div class="w-max">
+    <h1 class="animate-typing overflow-hidden border-r-4 border-r-secondary pr-1 whitespace-nowrap">IITM</h1>
+  </div>
       </div>
       
 </div>

@@ -7,8 +7,8 @@ function Contact() {
 
   return (
     <div className=' flex justify-center items-center mt-32'>
-        <div className='shadow-[0px_0px_50px_0px_#3182ce] flex rounded-3xl justify-between items-center  sm:w-[80%] mx-7 sm:mx-0'>
-            <form className='rounded-3xl shadow-[0px_0px_400px_0px_#3182ce] p-12 sm:p-16 w-full flex gap-5  flex-col justify-center items-start'>
+        <div className='shadow-[0px_0px_20px_0px_#3182ce] flex rounded-3xl justify-between items-center  sm:w-[80%] mx-7 sm:mx-0'>
+            <form className='rounded-3xl sm:shadow-[0px_0px_100px_0px_#3182ce] p-12 sm:p-16 w-full flex gap-5  flex-col justify-center items-start'>
                 <div className='flex flex-col gap-2'>
                 <label className='text-white text-3xl font-semibold'>Chat to our team</label>
                 <label className='text-gray-400 text-sm'>Need help with something..? Get in touch with our friendly team.</label>
