@@ -182,7 +182,7 @@ function page() {
                 <p className="text-gray-300 text-sm sm:text-xl">
                   Head of PR Department
                 </p>
-                <p className="text-gray-300 text-sm sm:text-xl">Bca 2nd Year</p>
+                <p className="text-gray-300 text-sm sm:text-xl">Bba 2nd Year</p>
               </div>
             </div>
             <div className="flex sm:flex-row flex-col gap-5 sm:gap-10 px-0 sm:px-5">
@@ -199,7 +199,7 @@ function page() {
                 <p className="text-gray-300 text-sm sm:text-xl">
                   Head of PR Department
                 </p>
-                <p className="text-gray-300 text-sm sm:text-xl">Bca 2nd Year</p>
+                <p className="text-gray-300 text-sm sm:text-xl">Bba 2nd Year</p>
               </div>
             </div>
             <div className="flex sm:flex-row flex-col gap-5 sm:gap-10 px-0 sm:px-5">
@@ -240,7 +240,7 @@ function page() {
                 <p className="text-gray-300 text-sm sm:text-xl">
                   Head of Publicity Department
                 </p>
-                <p className="text-gray-300 text-sm sm:text-xl">Bca 2nd Year</p>
+                <p className="text-gray-300 text-sm sm:text-xl">Bba 2nd Year</p>
               </div>
             </div>
             <div className="flex sm:flex-row flex-col gap-5 sm:gap-10 px-0 sm:px-5">
@@ -281,7 +281,7 @@ function page() {
                 <p className="text-gray-300 text-sm sm:text-xl">
                   Head of Event Management Department
                 </p>
-                <p className="text-gray-300 text-sm sm:text-xl">Bca 2nd Year</p>
+                <p className="text-gray-300 text-sm sm:text-xl">Bba 2nd Year</p>
               </div>
             </div>
             <div className="flex sm:flex-row flex-col gap-5 sm:gap-10 px-0 sm:px-5">
