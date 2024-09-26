@@ -7,7 +7,7 @@ function About() {
             <p className="font-extrabold text-white text-3xl sm:text-7xl sm:ml-10 sm:mr-5 text-center sm:text-left">About Us</p>
             
         </div>
-        <div className='sm:p-10 p-5 m-5 sm:m-0 rounded-l-2xl sm:rounded-l-2xl shadow-[0px_0px_400px_0px_#3182ce]  flex justify-center items-center'>
+        <div className='sm:p-10 p-5 m-5 sm:m-0 rounded-2xl sm:rounded-none sm:rounded-l-2xl shadow-[0px_0px_400px_0px_#3182ce]  flex justify-center items-center'>
             <p className="font-light text-white text-xl sm:text-2xl  text-center sm:text-left">
             A hub for college students passionate about coding. It connects you with other coders, providing a platform to share knowledge and collaborate. The community also organizes exciting events like hackathons to hone your coding skills and creativity.
             </p>
