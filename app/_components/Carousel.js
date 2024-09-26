@@ -1,14 +1,9 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 import Image from "next/image";
 
-const imgs = [
-  "/event.png",
-  "/event.png",
-  "/event.png",
-  "/event.png",
-];
+const imgs = ["/event.png", "/event2.jpg", "/event3.jpg"];
 
 const ONE_SECOND = 1000;
 const AUTO_DELAY = ONE_SECOND * 10;
@@ -54,7 +49,7 @@ export const Carousel = () => {
   };
 
   return (
-    <div className=" overflow-hidden p-3 mb-5 sm:mb-0 sm:p-16 h-full">
+    <div className=" overflow-hidden pb-10 sm:mb-0 sm:pb-10 h-full">
       <motion.div
         drag="x"
         dragConstraints={{
@@ -69,18 +64,23 @@ export const Carousel = () => {
         }}
         transition={SPRING_OPTIONS}
         onDragEnd={onDragEnd}
-        className="flex cursor-grab items-center active:cursor-grabbing"
+        className="flex cursor-grab items-center active:cursor-grabbing h-[300px] sm:h-[450px]"
       >
         <Images imgIndex={imgIndex} />
       </motion.div>
 
       <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} />
-      
     </div>
   );
 };
 
 const Images = ({ imgIndex }) => {
+  const [device, setDevice] = useState(0.85);
+  useEffect(() => {
+    if (window.innerWidth > 500) {
+      setDevice(0.65);
+    }
+  }, []);
   return (
     <>
       {imgs.map((imgSrc, idx) => {
@@ -93,7 +93,7 @@ const Images = ({ imgIndex }) => {
               backgroundPosition: "center",
             }}
             animate={{
-              scale: imgIndex === idx ? 0.95 : 0.85,
+              scale: imgIndex === idx ? device : 0.45,
             }}
             transition={SPRING_OPTIONS}
             className="sm:h-screen h-[300px] w-full shrink-0 bg-neutral-800 object-cover"

@@ -20,7 +20,7 @@ function Contact() {
                 <Button variant="outline" className="w-[50%]">Submit</Button>
             </form>
         <div className=' w-full h-full hidden sm:flex justify-center items-center rounded-3xl'>
-             <Image src={'/contact.png'} height={60} width={450}/>
+             <Image src={'/image.png'} height={60} width={900}/>
         </div>
         </div>
     </div>

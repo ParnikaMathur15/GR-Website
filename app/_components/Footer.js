@@ -3,10 +3,10 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className=' flex gap-5 justify-between sm:p-8 p-5 sm:h-[200px] bg-black mt-32 sm:mt-52'>
+    <div className=' flex gap-5 justify-between sm:p-8 p-3 sm:h-[200px] bg-black mt-32 sm:mt-52'>
         <div> 
             <p className='text-white sm:text-6xl text-2xl font-bold sm:mb-5 mb-3'>Geek Room IITM</p>
-            <p className='text-gray-300 text-xs sm:text-sm font-normal w-[250px] sm:w-[400px]'>Institute of Information Technology & Management
+            <p className='text-gray-300 text-xs sm:text-sm font-normal w-[200px] sm:w-[400px]'>Institute of Information Technology & Management
             D-29, Institutional Area, Janakpuri, New Delhi-110058</p>
         </div>
         <div >

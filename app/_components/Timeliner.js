@@ -1,11 +1,13 @@
-'use client'
+"use client";
 import React, { useEffect, useRef, useState } from "react";
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 import "./timeline.css";
 import Link from "next/link";
 
 // Dynamically import TimelineObserver
-const TimelineObserver = dynamic(() => import("react-timeline-animation"), { ssr: false });
+const TimelineObserver = dynamic(() => import("react-timeline-animation"), {
+  ssr: false,
+});
 
 const Timeline = ({ setObserver, callback }) => {
   const [message1, setMessage1] = useState("");
@@ -20,7 +22,7 @@ const Timeline = ({ setObserver, callback }) => {
   const circle3 = useRef(null);
 
   const someCallback = () => {
-    setMessage1("Event one");
+    setMessage1("Techno Sapiens");
     callback();
   };
 
@@ -33,7 +35,7 @@ const Timeline = ({ setObserver, callback }) => {
   };
 
   useEffect(() => {
-    if (typeof window !== "undefined" && 'IntersectionObserver' in window) {
+    if (typeof window !== "undefined" && "IntersectionObserver" in window) {
       setObserver(timeline1.current);
       setObserver(timeline2.current);
       setObserver(timeline3.current);
@@ -45,26 +47,46 @@ const Timeline = ({ setObserver, callback }) => {
 
   return (
     <div className="wrapper">
-      <div id="timeline1" ref={timeline1} className="h-[150px] sm:h-[200px] w-[5px] bg-[#e5e5e5]" />
+      <div
+        id="timeline1"
+        ref={timeline1}
+        className="h-[150px] sm:h-[200px] w-[5px] bg-[#e5e5e5]"
+      />
       <div className="circleWrapper">
         <div id="circle1" ref={circle1} className="circle font-bold">
           1
         </div>
-        <div className="absolute sm:left-[100px] left-[70px] font-semibold sm:whitespace-nowrap text-white -bottom-10 p-5 text-3xl sm:text-6xl rounded-2xl shadow-[0px_0px_400px_0px_#3182ce]">{message1}</div>
+        <Link href={"/events"}>
+          <div className="absolute sm:left-[90px] left-[60px] font-semibold sm:whitespace-nowrap text-white -bottom-7 p-5 text-3xl sm:text-6xl rounded-2xl shadow-[0px_0px_400px_0px_#3182ce] hover:bg-[#2172a5] hover:shadow-[0px_0px_0px_0px_#3182ce] hover:cursor-pointer transition-all">
+            {message1}
+          </div>
+        </Link>
       </div>
-      <div id="timeline2" ref={timeline2} className="h-[150px] sm:h-[200px] w-[5px] bg-[#e5e5e5]" />
-      <div className="circleWrapper"> 
+      <div
+        id="timeline2"
+        ref={timeline2}
+        className="h-[150px] sm:h-[200px] w-[5px] bg-[#e5e5e5]"
+      />
+      <div className="circleWrapper">
         <div id="circle2" ref={circle2} className="circle font-bold">
           2
         </div>
-        <div className="absolute sm:right-[100px] right-[70px] font-semibold sm:whitespace-nowrap text-white -bottom-10 p-5 text-3xl sm:text-6xl rounded-2xl shadow-[0px_0px_400px_0px_#3182ce]">{message2}</div>
+        <div className="absolute sm:right-[90px] right-[60px] font-semibold sm:whitespace-nowrap text-white -bottom-7 p-5 text-3xl sm:text-6xl rounded-2xl shadow-[0px_0px_400px_0px_#3182ce] hover:bg-[#2172a5] hover:shadow-[0px_0px_0px_0px_#3182ce] hover:cursor-pointer transition-all">
+          {message2}
+        </div>
       </div>
-      <div id="timeline3" ref={timeline3} className="h-[150px] sm:h-[200px] w-[5px] bg-[#e5e5e5]" />
+      <div
+        id="timeline3"
+        ref={timeline3}
+        className="h-[150px] sm:h-[200px] w-[5px] bg-[#e5e5e5]"
+      />
       <div className="circleWrapper">
         <div id="circle3" ref={circle3} className="circle font-bold">
           3
         </div>
-        <div className="absolute sm:left-[100px] left-[70px] font-semibold sm:whitespace-nowrap text-white -bottom-10 p-5 text-3xl sm:text-6xl rounded-2xl shadow-[0px_0px_400px_0px_#3182ce]">{message3}</div>
+        <div className="absolute sm:left-[90px] left-[60px] font-semibold sm:whitespace-nowrap text-white -bottom-7 p-5 text-3xl sm:text-6xl rounded-2xl shadow-[0px_0px_400px_0px_#3182ce] hover:bg-[#2172a5] hover:shadow-[0px_0px_0px_0px_#3182ce] hover:cursor-pointer transition-all">
+          {message3}
+        </div>
       </div>
     </div>
   );
@@ -90,14 +112,12 @@ export default function Timeliner() {
           />
         )}
       />
-      <Link href={'/events'}>
-      <div className=" text-white font-bold sm:text-3xl text-2xl flex flex-col justify-center items-center mt-24 ">
-        <div className="rounded-full bg-gradient-to-r from-secondary via-orange-300 to-primary p-1">
-          <div className="rounded-full bg-black py-5 px-10">
-            See Details
+      <Link href={"/events"}>
+        <div className=" text-white font-bold sm:text-3xl text-2xl flex flex-col justify-center items-center mt-24 ">
+          <div className="rounded-full bg-gradient-to-r from-secondary via-orange-300 to-primary p-1">
+            <div className="rounded-full bg-black py-5 px-10">See Details</div>
           </div>
         </div>
-      </div>
       </Link>
     </div>
   );
