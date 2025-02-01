@@ -91,6 +91,7 @@ const Images = ({ imgIndex }) => {
               backgroundImage: `url(${imgSrc})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
+              borderRadius: "50px 0px 50px 0px",
             }}
             animate={{
               scale: imgIndex === idx ? device : 0.45,

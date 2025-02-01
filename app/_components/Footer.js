@@ -12,15 +12,34 @@ function Footer() {
         <div >
             <h1 className='text-white text-xl sm:text-3xl font-semibold whitespace-nowrap'>Social Links</h1>
             <div className='flex flex-row sm:flex-col justify-end gap-5 sm:gap-0 mt-2 sm:mt-0'>
-            <div className='flex gap-2 mt-1 sm:mt-3 justify-end'>
-                <Instagram className='text-white' size={25}/>
-                <p className='text-white text-sm sm:text-lg hidden sm:flex'>Instagram</p>
+            <div className='flex flex-row sm:flex-col justify-end gap-5 sm:gap-0 mt-2 sm:mt-0'>
+            <div className="flex items-center gap-2 mt-1 sm:mt-3">
+                <a 
+                href="https://www.instagram.com/geekroom_iitm/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-white"
+                >
+                <Instagram className="text-white" size={25} />
+                <p className="text-white text-sm sm:text-lg hidden sm:flex">Instagram</p>
+                </a>
             </div>
-            <div className='flex gap-2 mt-1 sm:mt-3 justify-end'>
-                <Linkedin className='text-white' size={25}/>
-                <p className='text-white text-sm sm:text-lg hidden sm:flex'>LinkedIn</p>
+
+            <div className="flex items-center gap-2 mt-1 sm:mt-3">
+                <a 
+                href="https://www.linkedin.com/company/geek-room-iitm/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-white"
+                >
+                <Linkedin className="text-white" size={25} />
+                <p className="text-white text-sm sm:text-lg hidden sm:flex">LinkedIn</p>
+                </a>
             </div>
-            </div>
+        </div>
+
+    </div>
+
         </div>
     </div>
   )

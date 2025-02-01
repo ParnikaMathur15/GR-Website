@@ -63,8 +63,8 @@ function Hero2() {
         <h1>IITM</h1>
       </div>
       {/* <div className=" text-white font-extrabold text-5xl font-mono flex flex-col justify-center items-center mt-24 ">
-        <div class="rounded-full bg-gradient-to-r from-secondary via-orange-300 to-primary p-1">
-          <div class="rounded-full bg-black py-5 px-56">
+        <div className="rounded-full bg-gradient-to-r from-secondary via-orange-300 to-primary p-1">
+          <div className="rounded-full bg-black py-5 px-56">
             What is Geek Room?
           </div>
         </div>

@@ -16,7 +16,9 @@ export default function Home() {
       <Carousel/>
       <Timeliner/>
       <Faq/>
-      <Contact/>
+      <section id="contact-section">
+        <Contact />
+      </section>
     </div>
   );
 }
