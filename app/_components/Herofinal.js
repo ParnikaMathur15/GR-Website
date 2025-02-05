@@ -34,7 +34,7 @@ const container3 = (delay) => ({
 function Herofinal() {
   return (
 <div>
-<div className="h-[300px] mt-14 flex gap-6 justify-center items-end">
+<div className="h-[300px] mt-20 flex gap-8 justify-center items-end">
         <motion.div
           variants={container(0.5)}
           initial="hidden"

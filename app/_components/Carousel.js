@@ -49,7 +49,7 @@ export const Carousel = () => {
   };
 
   return (
-    <div className=" overflow-hidden pb-10 sm:mb-0 sm:pb-10 h-full">
+    <div className="overflow-hidden pb-10 sm:mb-0 sm:pb-10 h-full">
       <motion.div
         drag="x"
         dragConstraints={{
@@ -97,7 +97,7 @@ const Images = ({ imgIndex }) => {
               scale: imgIndex === idx ? device : 0.45,
             }}
             transition={SPRING_OPTIONS}
-            className="sm:h-screen h-[300px] w-full shrink-0 bg-neutral-800 object-cover"
+            className="shadow-[20px_15px_40px_0px_#3182ce] sm:h-screen h-[300px] w-full shrink-0 bg-neutral-800 object-cover"
           >
             {/* <Image src={imgSrc} fill/> */}
           </motion.div>

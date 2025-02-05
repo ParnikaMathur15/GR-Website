@@ -14,7 +14,7 @@ function Navbar() {
   const path = usePathname();
   
   return (
-    <div className="fixed top-0 w-full z-50 backdrop-blur-md bg-black/30 shadow-white/10 shadow-md flex gap-10 sm:gap-20 justify-center items-center p-5 text-white text-sm sm:text-xl">
+    <div className="fixed top-0 w-full z-50 backdrop-blur-lg bg-black/30 shadow-white/10 shadow-lg flex gap-10 sm:gap-20 justify-center items-center p-5 text-white text-sm sm:text-xl">
       {menuList.map((menu, index) => (
         <Link
           href={menu.path}

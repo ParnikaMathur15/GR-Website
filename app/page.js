@@ -17,7 +17,7 @@ export default function Home() {
       <Timeliner/>
       <Faq/>
       <section id="contact-section">
-        <Contact />
+        <Contact/>
       </section>
     </div>
   );

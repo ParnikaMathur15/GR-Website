@@ -5,7 +5,7 @@ import React from "react";
 function page() {
   return (
     <div>
-      <div className="flex sm:flex-row flex-col justify-center items-center p-10 gap-10 sm:gap-20">
+      <div className="flex sm:flex-row flex-col justify-center items-center p-20 gap-10 sm:gap-20">
         <div className=" rounded-3xl p-5 sm:shadow-[0px_0px_100px_0px_#3182ce] shadow-[0px_0px_50px_0px_#3182ce]">
         <div className="flex w-[300px] sm:w-[350px] h-[250px] sm:h-[300px]">
           <Image src={"/amaanii.png"} height={20} width={400} className="rounded-t-2xl"/>
