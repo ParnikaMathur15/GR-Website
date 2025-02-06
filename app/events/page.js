@@ -106,7 +106,7 @@ function Events() {
   return (
     <div className="flex flex-wrap gap-10 lg:gap-20 md:gap-7 justify-center mt-20">
       {sampleEvents.map((item, index) => (
-        <div key={index} className="shadow-[0px_1px_10px_0px_#3182ce] w-[350px] md:w-[340px] h-[400px] sm:w-[400px] h-[420px] bg-gray-800 rounded-lg p-4 shadow-lg">
+        <div key={index} className=" w-[350px] md:w-[340px] h-[400px] sm:w-[400px] h-[420px] bg-gray-800 rounded-lg p-4 shadow-[5px_1px_15px_0px_#3182ee]">
           <div className="text-center mb-2">
             <p className="font-bold text-white text-2xl border-b-2 border-secondary pb-2 mb-5">
               {item.eventName}
