@@ -126,7 +126,7 @@ function page() {
         </div>
         <div className="mt-10 sm:mt-20 flex justify-between gap-5 sm:gap-0 h-[150px] sm:h-[300px]">
           <div className="flex rounded-r-3xl w-[250px] sm:w-[450px] p-3 sm:p-5 justify-end bg-secondary">
-            <Image src={"/vikas.png"} height={20} width={300} className="rounded-r-2xl"/>
+            <Image src={"/vikas.png"} height={20} width={300} className="rounded-r-2xl bg-cover"/>
           </div>
           <div className=" flex justify-between items-start w-full sm:w-[800px] sm:py-16 py-5 px-5 sm:px-10 rounded-l-3xl sm:shadow-[0px_0px_50px_0px_#3182ce] shadow-[0px_0px_30px_0px_#3182ce]">
             <div className="">

@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { LoaderCircle } from "lucide-react";
+import { Title } from "@radix-ui/react-toast";
 
 // Custom arrow components
 function NextArrow(props) {
@@ -55,34 +56,16 @@ const sampleEvents = [
     images: ["event.png", "event2.jpg", "event3.jpg"],
     eventDesc: "An amazing conference bringing tech enthusiasts together!",
   },
-  {
-    eventName: "AI Summit",
-    images: ["ai1.jpg", "ai2.jpg", "ai3.jpg"],
-    eventDesc: "Exploring the future of AI and innovation.",
-  },
-  {
-    eventName: "AI Summit",
-    images: ["ai1.jpg", "ai2.jpg", "ai3.jpg"],
-    eventDesc: "Exploring the future of AI and innovation.",
-  },
-  {
-    eventName: "AI Summit",
-    images: ["ai1.jpg", "ai2.jpg", "ai3.jpg"],
-    eventDesc: "Exploring the future of AI and innovation.",
-  },
-  {
-    eventName: "AI Summit",
-    images: ["ai1.jpg", "ai2.jpg", "ai3.jpg"],
-    eventDesc: "Exploring the future of AI and innovation.",
-  },
 ];
 
 function Events() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState("");
+  const [modalTitle, setModalTitle] = useState("");
 
-  const openModal = (desc) => {
+  const openModal = (desc,Title) => {
     setModalContent(desc);
+    setModalTitle(Title);
     setModalOpen(true);
   };
 
@@ -106,7 +89,7 @@ function Events() {
   return (
     <div className="flex flex-wrap gap-10 lg:gap-20 md:gap-7 justify-center mt-20">
       {sampleEvents.map((item, index) => (
-        <div key={index} className="shadow-[0px_1px_10px_0px_#3182ce] w-[350px] md:w-[340px] h-[400px] sm:w-[400px] h-[420px] bg-gray-800 rounded-lg p-4 shadow-lg">
+        <div key={index} className=" w-[350px] md:w-[340px] sm:w-[400px] h-[420px] bg-gray-800 rounded-lg p-4 shadow-lg">
           <div className="text-center mb-2">
             <p className="font-bold text-white text-2xl border-b-2 border-secondary pb-2 mb-5">
               {item.eventName}
@@ -128,7 +111,7 @@ function Events() {
           <div className="flex justify-center items-center mt-5">
           <button
             className="bg-orange-500 text-white px-4 py-2 rounded-md w-[150px]"
-            onClick={() => openModal(item.eventDesc)}
+            onClick={() => openModal(item.eventDesc,item.eventName)}
           >
             Learn More
           </button>
@@ -136,10 +119,13 @@ function Events() {
         </div>
       ))}
       {modalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white p-6 rounded-lg w-80 text-center">
-            <p className="text-black">{modalContent}</p>
-            <button className="mt-4 bg-red-500 text-white px-4 py-2 rounded-md" onClick={closeModal}>
+        <div className=" h-screen backdrop-blur-md fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50 ">
+          <div className="bg-gray-800 shadow-[0px_1px_10px_0px_#3182ce] shadow-white flex flex-col justify-between p-6 rounded-lg w-80 h-[65%] text-center">
+            <p className="font-bold text-white text-2xl border-b-2 border-orange-500 pb-2 mb-5">{modalTitle}</p>
+            <p className="text-white">{modalContent}</p>
+           
+            
+            <button className="mt-4 bg-orange-500 text-white px-4 py-2 rounded-md" onClick={closeModal}>
               Close
             </button>
           </div>
