@@ -145,11 +145,11 @@ function Events() {
                   <img
                     src={`/uploads/${modalImage}`}
                     alt="Event"
-                    className="w-full h-[180px] sm:h-[120px] object-fit rounded-lg mb-3"
+                    className="lg:h-[200px] w-full h-[180px] sm:h-[120px] object-fit rounded-lg mb-3"
                   />
                 )}
 
-                <p className="text-white sm:text-sm">{modalContent}</p>
+                <p className="text-white sm:text-sm text-justify">{modalContent}</p>
                 <div className="flex justify-center">
                   <button
                     className="mt-4 bg-orange-500 w-20 text-white px-4 py-2 rounded-md transition-transform transform hover:scale-105"
