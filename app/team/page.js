@@ -5,10 +5,10 @@ import React from "react";
 function page() {
   return (
     <div>
-      <div className="flex sm:flex-row flex-col justify-center items-center p-20 gap-10 sm:gap-20">
-        <div className=" rounded-3xl p-5 sm:shadow-[0px_0px_100px_0px_#3182ce] shadow-[0px_0px_50px_0px_#3182ce]">
+      <div className="flex sm:flex-row flex-col justify-center items-center p-20 gap-10 lg:gap-[100px] sm:gap-10">
+        <div className="rounded-3xl p-5 sm:shadow-[0px_0px_100px_0px_#3182ce] shadow-[0px_0px_50px_0px_#3182ce] lg:w-[360px] sm:w-[350px]">
         <div className="flex w-[300px] sm:w-[350px] h-[250px] sm:h-[300px]">
-          <Image src={"/amaanii.png"} height={20} width={400} className="rounded-t-2xl"/>
+          <Image src={"/amaanii.png"} height={20} width={400} className="rounded-t-2xl lg:w-[320px] sm:w-[310px]"/>
           </div>
           <h1 className="text-white text-4xl sm:text-5xl mt-4 whitespace-nowrap">Amaani Arora</h1>
           <div className="flex justify-between mt-6">
@@ -27,9 +27,9 @@ function page() {
           </div>
         </div>
        
-        <div className="sm:shadow-[0px_0px_100px_0px_#3182ce] shadow-[0px_0px_50px_0px_#3182ce] rounded-3xl p-5">
+        <div className="sm:shadow-[0px_0px_100px_0px_#3182ce] shadow-[0px_0px_50px_0px_#3182ce] rounded-3xl p-5  lg:w-[360px] sm:w-[350px]">
           <div className="flex w-[300px] sm:w-[350px] h-[250px] sm:h-[300px]">
-          <Image src={"/chirag.png"} height={20} width={400} className="rounded-t-2xl"/>
+          <Image src={"/chirag.png"} height={20} width={400} className="rounded-t-2xl lg:w-[320px] sm:w-[310px]"/>
           </div>
           <h1 className="text-white text-4xl sm:text-5xl mt-4 whitespace-nowrap">Chirag Jain</h1>
           <div className="flex justify-between mt-6">
@@ -126,7 +126,7 @@ function page() {
         </div>
         <div className="mt-10 sm:mt-20 flex justify-between gap-5 sm:gap-0 h-[150px] sm:h-[300px]">
           <div className="flex rounded-r-3xl w-[250px] sm:w-[450px] p-3 sm:p-5 justify-end bg-secondary">
-            <Image src={"/vikas.png"} height={20} width={300} className="rounded-r-2xl"/>
+            <Image src={"/vikas.png"} height={20} width={300} className="rounded-r-2xl bg-cover"/>
           </div>
           <div className=" flex justify-between items-start w-full sm:w-[800px] sm:py-16 py-5 px-5 sm:px-10 rounded-l-3xl sm:shadow-[0px_0px_50px_0px_#3182ce] shadow-[0px_0px_30px_0px_#3182ce]">
             <div className="">
