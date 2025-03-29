@@ -82,16 +82,16 @@ function page() {
           </div>
           <div className=" flex justify-between items-start w-full sm:w-[800px] sm:py-16 py-5 px-5 sm:px-10 rounded-l-3xl sm:shadow-[0px_0px_50px_0px_#3182ce] shadow-[0px_0px_30px_0px_#3182ce]">
             <div className="">
-              <h1 className="text-white text-3xl sm:text-6xl">Rohit</h1>
+              <h1 className="text-white text-3xl sm:text-6xl">Manas</h1>
               <div className="flex flex-col mt-2 sm:mt-10">
                 <p className="text-gray-300 text-sm sm:text-xl">
                   AI/Emerging Department
                 </p>
-                <p className="text-gray-300 text-sm sm:text-xl">BCA 3<sup>rd</sup> Year</p>
+                <p className="text-gray-300 text-sm sm:text-xl">BCA 1<sup>rd</sup> Year</p>
               </div>
             </div>
             <div className="flex gap-10 px-5">
-              <a href="https://www.linkedin.com/in/rohit-dev005/" 
+              <a href="https://www.linkedin.com/in/manas-chawla-277155325/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-white">
@@ -151,7 +151,7 @@ function page() {
         <div className="mt-10 sm:mt-20 flex justify-between gap-5 sm:gap-0 h-[150px] sm:h-[300px]">
           <div className=" flex justify-between items-start w-full sm:w-[800px] sm:py-16 py-5 px-5 sm:px-10 rounded-r-3xl sm:shadow-[0px_0px_50px_0px_#3182ce] shadow-[0px_0px_30px_0px_#3182ce]">
             <div className="">
-              <h1 className="text-white text-3xl sm:text-6xl">Ayush</h1>
+              <h1 className="text-white text-3xl sm:text-6xl">Arpit</h1>
               <div className="flex flex-col mt-2 sm:mt-10">
                 <p className="text-gray-300 text-sm sm:text-xl">
                   DSA Department
@@ -160,7 +160,7 @@ function page() {
               </div>
             </div>
             <div className="flex gap-10 px-5">
-              <a href="https://www.linkedin.com/in/ayush-jaiswal-81084a277/" 
+              <a href="https://www.linkedin.com/in/arpit-kansal-9346862a8" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-white">
@@ -169,7 +169,7 @@ function page() {
             </div>
           </div>
           <div className="flex rounded-l-3xl w-[250px] sm:w-[450px] p-3 sm:p-5 justify-start bg-secondary">
-            <Image src={"/ayush.png"} height={20} width={300} className="rounded-l-2xl"/>
+            <Image src={"/arpit.jpg"} height={20} width={300} className="rounded-l-2xl"/>
           </div>
         </div>
         
@@ -331,16 +331,16 @@ function page() {
           </div>
           <div className=" flex justify-between items-start w-full sm:w-[800px] sm:py-16 py-5 px-5 sm:px-10 rounded-l-3xl sm:shadow-[0px_0px_50px_0px_#3182ce] shadow-[0px_0px_30px_0px_#3182ce]">
             <div className="">
-              <h1 className="text-white text-3xl sm:text-6xl">Mayank</h1>
+              <h1 className="text-white text-3xl sm:text-6xl">Tanveer</h1>
               <div className="flex flex-col mt-2 sm:mt-10">
                 <p className="text-gray-300 text-sm sm:text-xl">
                   Publicity Department
                 </p>
-                <p className="text-gray-300 text-sm sm:text-xl">BCA 2<sup>nd</sup> Year</p>
+                <p className="text-gray-300 text-sm sm:text-xl">BBA 2<sup>nd</sup> Year</p>
               </div>
             </div>
             <div className="flex gap-10 px-5">
-              <a href="https://www.linkedin.com/in/mayank-aggarwal-27a247251/" 
+              <a href="https://www.linkedin.com/in/tanveer-singh-kukreja-84a6582bb" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-white">

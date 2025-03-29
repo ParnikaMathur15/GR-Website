@@ -55,7 +55,7 @@ function Herofinal() {
           whileTap={{ scale: 0.8 }}
           className="rounded-3xl p-10 shadow-[0px_0px_400px_0px_#3182ce] mb-5 hover:mx-5 transition-all"
         >
-          <Image src={"/geekroom.png"} width={300} height={400} alt="profile" />
+          <Image src={"/nexverse.png"} width={300} height={400} alt="profile" />
         </motion.div>
         <motion.div
           variants={container2(0.5)}
@@ -71,7 +71,7 @@ function Herofinal() {
         </motion.div>
       </div>
       <div className=" text-white font-bold text-6xl sm:text-7xl flex flex-col justify-center items-center mb-10">
-        <h1>Geek Room</h1>
+        <h1>NexVerse</h1>
         <div className="w-max">
     <h1 className="animate-typing overflow-hidden border-r-4 border-r-secondary pr-1 whitespace-nowrap">IITM</h1>
   </div>

@@ -113,7 +113,7 @@ function Events() {
             </div>
             <div className="flex justify-center items-center mt-5">
               <button
-                className="bg-orange-500 text-white px-4 py-2 rounded-md w-[150px] transition-transform transform hover:scale-105"
+                className="bg-secondary text-black px-4 py-2 rounded-md w-[150px] transition-transform transform hover:scale-105"
                 onClick={() => openModal(item.eventDesc, item.eventName, item.modalImage)}
               >
                 Learn More

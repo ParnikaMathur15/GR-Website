@@ -50,14 +50,14 @@ const Timeline = ({ setObserver, callback }) => {
       <div
         id="timeline1"
         ref={timeline1}
-        className="h-[150px] sm:h-[170px] w-[5px] bg-[#e5e5e5] rounded-t-[20px]"
+        className="h-[150px] sm:h-[170px] w-[5px] bg-secondary rounded-t-[20px]"
       />
       <div className="circleWrapper">
         <div id="circle1" ref={circle1} className="circle font-bold">
           1
         </div>
         <Link href={"/events"}>
-          <div className="absolute sm:left-[90px] left-[60px] font-semibold sm:whitespace-nowrap text-white -bottom-7 p-5 text-3xl sm:text-6xl rounded-2xl shadow-[0px_0px_400px_0px_#3182ce] hover:bg-[#2172a5] hover:shadow-[0px_0px_0px_0px_#3182ce] hover:cursor-pointer transition-all">
+          <div className="absolute sm:left-[90px] left-[60px] font-semibold sm:whitespace-nowrap text-white -bottom-7 p-5 text-3xl sm:text-6xl rounded-2xl shadow-[0px_0px_400px_0px_#3182ce] hover:bg-secondary hover:shadow-[0px_0px_0px_0px_#3182ce] hover:cursor-pointer transition-all">
             {message1}
           </div>
         </Link>
@@ -65,13 +65,13 @@ const Timeline = ({ setObserver, callback }) => {
       <div
         id="timeline2"
         ref={timeline2}
-        className="h-[150px] sm:h-[200px] w-[5px] bg-[#e5e5e5]"
+        className="h-[150px] sm:h-[200px] w-[5px] bg-secondary"
       />
       <div className="circleWrapper">
         <div id="circle2" ref={circle2} className="circle font-bold">
           2
         </div>
-        <div className="absolute sm:right-[90px] right-[60px] font-semibold sm:whitespace-nowrap text-white -bottom-7 p-5 text-3xl sm:text-6xl rounded-2xl shadow-[0px_0px_400px_0px_#3182ce] hover:bg-[#2172a5] hover:shadow-[0px_0px_0px_0px_#3182ce] hover:cursor-pointer transition-all">
+        <div className="absolute sm:right-[90px] right-[60px] font-semibold sm:whitespace-nowrap text-white -bottom-7 p-5 text-3xl sm:text-6xl rounded-2xl shadow-[0px_0px_400px_0px_#3182ce] hover:bg-secondary hover:shadow-[0px_0px_0px_0px_#3182ce] hover:cursor-pointer transition-all">
           {message2}
         </div>
       </div>
@@ -114,7 +114,7 @@ export default function Timeliner() {
       />
       <Link href={"/events"}>
         <div className=" text-white font-bold sm:text-3xl text-2xl flex flex-col justify-center items-center mt-24 ">
-          <div className="rounded-full bg-gradient-to-r from-secondary via-orange-300 to-primary p-1">
+          <div className="rounded-full bg-gradient-to-r from-secondary to-primary p-1">
             <div className="rounded-full bg-black py-5 px-10">See Event Details</div>
           </div>
         </div>

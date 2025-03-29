@@ -69,7 +69,7 @@
 	list-style: none;
 	width: 20px;
 	height: 20px;
-	background: rgba(7, 143, 221, 0.2);
+	background: #3182ce;
 	animation: animate 25s linear infinite;
 	bottom: -150px;
 }
