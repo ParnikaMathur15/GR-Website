@@ -78,11 +78,11 @@ function page() {
         </div>
         <div className="flex justify-between gap-5 sm:gap-0 h-[150px] sm:h-[300px]">
           <div className="flex rounded-r-3xl w-[250px] sm:w-[450px] p-3 sm:p-5 justify-end bg-secondary object-cover">
-            <Image src={"/rohit.png"} height={20} width={300} className="rounded-r-2xl"/>
+            <Image src={"/manas.jpg"} height={20} width={300} className="rounded-r-2xl"/>
           </div>
           <div className=" flex justify-between items-start w-full sm:w-[800px] sm:py-16 py-5 px-5 sm:px-10 rounded-l-3xl sm:shadow-[0px_0px_50px_0px_#3182ce] shadow-[0px_0px_30px_0px_#3182ce]">
             <div className="">
-              <h1 className="text-white text-3xl sm:text-6xl">Manas</h1>
+              <h1 className="text-white text-3xl sm:text-6xl">Manas Chawala</h1>
               <div className="flex flex-col mt-2 sm:mt-10">
                 <p className="text-gray-300 text-sm sm:text-xl">
                   AI/Emerging Department
@@ -103,7 +103,7 @@ function page() {
         <div className="mt-10 sm:mt-20 flex justify-between gap-5 sm:gap-0 h-[150px] sm:h-[300px]">
           <div className=" flex justify-between items-start w-full sm:w-[800px] sm:py-16 py-5 px-5 sm:px-10 rounded-r-3xl sm:shadow-[0px_0px_50px_0px_#3182ce] shadow-[0px_0px_30px_0px_#3182ce]">
             <div className="">
-              <h1 className="text-white text-3xl sm:text-6xl">Pratham</h1>
+              <h1 className="text-white text-3xl sm:text-6xl">Pratham Saluja</h1>
               <div className="flex flex-col mt-2 sm:mt-10">
                 <p className="text-gray-300 text-sm sm:text-xl">
                   AI/Emerging Department
@@ -130,7 +130,7 @@ function page() {
           </div>
           <div className=" flex justify-between items-start w-full sm:w-[800px] sm:py-16 py-5 px-5 sm:px-10 rounded-l-3xl sm:shadow-[0px_0px_50px_0px_#3182ce] shadow-[0px_0px_30px_0px_#3182ce]">
             <div className="">
-              <h1 className="text-white text-3xl sm:text-6xl">Vikas</h1>
+              <h1 className="text-white text-3xl sm:text-6xl">Vikas Gulia</h1>
               <div className="flex flex-col mt-2 sm:mt-10">
                 <p className="text-gray-300 text-sm sm:text-xl">
                   DSA Department
@@ -151,7 +151,7 @@ function page() {
         <div className="mt-10 sm:mt-20 flex justify-between gap-5 sm:gap-0 h-[150px] sm:h-[300px]">
           <div className=" flex justify-between items-start w-full sm:w-[800px] sm:py-16 py-5 px-5 sm:px-10 rounded-r-3xl sm:shadow-[0px_0px_50px_0px_#3182ce] shadow-[0px_0px_30px_0px_#3182ce]">
             <div className="">
-              <h1 className="text-white text-3xl sm:text-6xl">Arpit</h1>
+              <h1 className="text-white text-3xl sm:text-6xl">Arpit Kansal</h1>
               <div className="flex flex-col mt-2 sm:mt-10">
                 <p className="text-gray-300 text-sm sm:text-xl">
                   DSA Department
@@ -179,7 +179,7 @@ function page() {
           </div>
           <div className=" flex justify-between items-start w-full sm:w-[800px] sm:py-16 py-5 px-5 sm:px-10 rounded-l-3xl sm:shadow-[0px_0px_50px_0px_#3182ce] shadow-[0px_0px_30px_0px_#3182ce]">
             <div className="">
-              <h1 className="text-white text-3xl sm:text-6xl">Parnika</h1>
+              <h1 className="text-white text-3xl sm:text-6xl">Parnika Mathur</h1>
               <div className="flex flex-col mt-2 sm:mt-10">
                 <p className="text-gray-300 text-sm sm:text-xl">
                   Web Dev Department
@@ -200,7 +200,7 @@ function page() {
         <div className="mt-10 sm:mt-20 flex justify-between gap-5 sm:gap-0 h-[150px] sm:h-[300px]">
           <div className=" flex justify-between items-start w-full sm:w-[800px] sm:py-16 py-5 px-5 sm:px-10 rounded-r-3xl sm:shadow-[0px_0px_50px_0px_#3182ce] shadow-[0px_0px_30px_0px_#3182ce]">
             <div className="">
-              <h1 className="text-white text-3xl sm:text-6xl">Tushar</h1>
+              <h1 className="text-white text-3xl sm:text-6xl">Tushar Sharma</h1>
               <div className="flex flex-col mt-2 sm:mt-10">
                 <p className="text-gray-300 text-sm sm:text-xl">
                   Web Dev Department
@@ -227,7 +227,7 @@ function page() {
           </div>
           <div className=" flex justify-between items-start w-full sm:w-[800px] sm:py-16 py-5 px-5 sm:px-10 rounded-l-3xl sm:shadow-[0px_0px_50px_0px_#3182ce] shadow-[0px_0px_30px_0px_#3182ce]">
             <div className="">
-              <h1 className="text-white text-3xl sm:text-6xl">Bhoomi</h1>
+              <h1 className="text-white text-3xl sm:text-6xl">Bhoomi Arora</h1>
               <div className="flex flex-col mt-2 sm:mt-10">
                 <p className="text-gray-300 text-sm sm:text-xl">
                   Designing Department
@@ -248,7 +248,7 @@ function page() {
         <div className="mt-10 sm:mt-20 flex justify-between gap-5 sm:gap-0 h-[150px] sm:h-[300px]">
           <div className=" flex justify-between items-start w-full sm:w-[800px] sm:py-16 py-5 px-5 sm:px-10 rounded-r-3xl sm:shadow-[0px_0px_50px_0px_#3182ce] shadow-[0px_0px_30px_0px_#3182ce]">
             <div className="">
-              <h1 className="text-white text-3xl sm:text-6xl">Harsh</h1>
+              <h1 className="text-white text-3xl sm:text-6xl">Harsh Gupta</h1>
               <div className="flex flex-col mt-2 sm:mt-10">
                 <p className="text-gray-300 text-sm sm:text-xl">
                   Designing Department
@@ -282,7 +282,7 @@ function page() {
           </div>
           <div className=" flex justify-between items-start w-full sm:w-[800px] sm:py-16 py-5 px-5 sm:px-10 rounded-l-3xl sm:shadow-[0px_0px_50px_0px_#3182ce] shadow-[0px_0px_30px_0px_#3182ce]">
             <div className="">
-              <h1 className="text-white text-3xl sm:text-6xl">Ayush</h1>
+              <h1 className="text-white text-3xl sm:text-6xl">Ayush Kumar</h1>
               <div className="flex flex-col mt-2 sm:mt-10">
                 <p className="text-gray-300 text-sm sm:text-xl">
                   PR Department
@@ -303,7 +303,7 @@ function page() {
         <div className="mt-10 sm:mt-20 flex justify-between gap-5 sm:gap-0 h-[150px] sm:h-[300px]">
           <div className=" flex justify-between items-start w-full sm:w-[800px] sm:py-16 py-5 px-5 sm:px-10 rounded-r-3xl sm:shadow-[0px_0px_50px_0px_#3182ce] shadow-[0px_0px_30px_0px_#3182ce]">
             <div className="">
-              <h1 className="text-white text-3xl sm:text-6xl">Priyanshu</h1>
+              <h1 className="text-white text-3xl sm:text-6xl">Priyanshu Ghai</h1>
               <div className="flex flex-col mt-2 sm:mt-10">
                 <p className="text-gray-300 text-sm sm:text-xl">
                   PR Department
@@ -327,11 +327,11 @@ function page() {
         
         <div className="mt-10 sm:mt-20 flex justify-between gap-5 sm:gap-0 h-[150px] sm:h-[300px]">
           <div className="flex rounded-r-3xl w-[250px] sm:w-[450px] p-3 sm:p-5 justify-end bg-secondary">
-            <Image src={"/mayank.png"} height={20} width={300} className="rounded-r-2xl"/>
+            <Image src={"/tanveer.jpg"} height={20} width={300} className="rounded-r-2xl"/>
           </div>
           <div className=" flex justify-between items-start w-full sm:w-[800px] sm:py-16 py-5 px-5 sm:px-10 rounded-l-3xl sm:shadow-[0px_0px_50px_0px_#3182ce] shadow-[0px_0px_30px_0px_#3182ce]">
             <div className="">
-              <h1 className="text-white text-3xl sm:text-6xl">Tanveer</h1>
+              <h1 className="text-white text-3xl sm:text-6xl">Tanveer Kukreja</h1>
               <div className="flex flex-col mt-2 sm:mt-10">
                 <p className="text-gray-300 text-sm sm:text-xl">
                   Publicity Department
@@ -352,7 +352,7 @@ function page() {
         <div className="mt-10 sm:mt-20 flex justify-between gap-5 sm:gap-0 h-[150px] sm:h-[300px]">
           <div className=" flex justify-between items-start w-full sm:w-[800px] sm:py-16 py-5 px-5 sm:px-10 rounded-r-3xl sm:shadow-[0px_0px_50px_0px_#3182ce] shadow-[0px_0px_30px_0px_#3182ce]">
             <div className="">
-              <h1 className="text-white text-3xl sm:text-6xl">Sakshi</h1>
+              <h1 className="text-white text-3xl sm:text-6xl">Sakshi Sharma</h1>
               <div className="flex flex-col mt-2 sm:mt-10">
                 <p className="text-gray-300 text-sm sm:text-xl">
                   Publicity Department
@@ -380,7 +380,7 @@ function page() {
           </div>
           <div className=" flex justify-between items-start w-full sm:w-[800px] sm:py-16 py-5 px-5 sm:px-10 rounded-l-3xl sm:shadow-[0px_0px_50px_0px_#3182ce] shadow-[0px_0px_30px_0px_#3182ce]">
             <div className="">
-              <h1 className="text-white text-3xl sm:text-6xl">Tanya</h1>
+              <h1 className="text-white text-3xl sm:text-6xl">Taniya Gusain</h1>
               <div className="flex flex-col mt-2 sm:mt-10">
                 <p className="text-gray-300 text-sm sm:text-xl">
                   Event Managemant Department
@@ -401,7 +401,7 @@ function page() {
         <div className="mt-10 sm:mt-20 flex justify-between gap-5 sm:gap-0 h-[150px] sm:h-[300px]">
           <div className=" flex justify-between items-start w-full sm:w-[800px] sm:py-16 py-5 px-5 sm:px-10 rounded-r-3xl sm:shadow-[0px_0px_50px_0px_#3182ce] shadow-[0px_0px_30px_0px_#3182ce]">
             <div className="">
-              <h1 className="text-white text-3xl sm:text-6xl">Shaivi</h1>
+              <h1 className="text-white text-3xl sm:text-6xl">Shaivi Dhuper</h1>
               <div className="flex flex-col mt-2 sm:mt-10">
                 <p className="text-gray-300 text-sm sm:text-xl">
                   Event Management Department

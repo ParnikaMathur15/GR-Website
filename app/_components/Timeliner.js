@@ -22,7 +22,7 @@ const Timeline = ({ setObserver, callback }) => {
   // const circle3 = useRef(null);
 
   const someCallback = () => {
-    setMessage1("Techno Sapiens");
+    setMessage1("Tech Minds");
     callback();
   };
 
@@ -50,7 +50,7 @@ const Timeline = ({ setObserver, callback }) => {
       <div
         id="timeline1"
         ref={timeline1}
-        className="h-[150px] sm:h-[170px] w-[5px] bg-secondary rounded-t-[20px]"
+        className="h-[150px] sm:h-[170px] w-[5px] secondary rounded-t-[20px]"
       />
       <div className="circleWrapper">
         <div id="circle1" ref={circle1} className="circle font-bold">
@@ -103,7 +103,7 @@ export default function Timeliner() {
     <div className="App flex flex-col justify-center items-center">
       <TimelineObserver
         initialColor="#e5e5e5"
-        fillColor="#3098d9"
+        fillColor="#84FFF3"
         handleObserve={(setObserver) => (
           <Timeline
             callback={onCallback}

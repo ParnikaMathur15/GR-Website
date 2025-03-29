@@ -139,7 +139,7 @@ function Events() {
                 exit={{ y: -50, opacity: 0 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
               >
-                <p className="font-bold text-white text-2xl sm:text-lg border-b-2 border-orange-500 pb-2 mb-5">{modalTitle}</p>
+                <p className="font-bold text-white text-2xl sm:text-lg border-b-2 border-secondary-500 pb-2 mb-5">{modalTitle}</p>
                 
                 {modalImage && (
                   <img
@@ -152,7 +152,7 @@ function Events() {
                 <p className="text-white sm:text-sm text-justify">{modalContent}</p>
                 <div className="flex justify-center">
                   <button
-                    className="mt-4 bg-orange-500 w-20 text-white px-4 py-2 rounded-md transition-transform transform hover:scale-105"
+                    className="mt-4 bg-secondary w-20 text-black px-4 py-2 rounded-md transition-transform transform hover:scale-105"
                     onClick={closeModal}
                   >
                     Close
